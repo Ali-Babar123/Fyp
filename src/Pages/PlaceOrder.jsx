@@ -11,7 +11,7 @@ import ProductContext from '../context/ProductContext'
 const PlaceOrder = () => {
 
     const [method, setMethod] = useState('cod');
-    const {navigate} = useContext(productContext);
+    const {navigate} = useContext(ProductContext);
  
     return (
         <div className='px-24 flex flex-col sm:flex-row justify-between gap-4 pt-5 sm:pt-14 min-h-[80vh] border-t '>
