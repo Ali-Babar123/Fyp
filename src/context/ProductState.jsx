@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import productContext from "./ProductContext";
+import ProductContext from "./ProductContext";
 import { products } from '../assets/assets';
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
@@ -89,7 +89,7 @@ const ProductState = ({ children }) => {
 
     // Return the provider here
     return (
-        <productContext.Provider
+        <ProductContext.Provider
             value={{
                 products,
                 currency,
@@ -107,7 +107,7 @@ const ProductState = ({ children }) => {
             }}
         >
             {children}
-        </productContext.Provider>
+        </ProductContext.Provider>
     );
 };
 
