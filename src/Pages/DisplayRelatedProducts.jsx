@@ -1,12 +1,12 @@
 
 
 import React, { useContext, useEffect, useState } from 'react'
-import productContext from '../context/ProductContext'
+import ProductContext from '../context/ProductContext'
 import ProductItem from './ProductItem';
 
 const DisplayRelatedProducts = ({category, subCategory}) => {
 
-    const {products} = useContext(productContext);
+    const {products} = useContext(ProductContext);
     const [relatedProducts, setRelatedProducts] = useState([]);
 
     useEffect(()=>{

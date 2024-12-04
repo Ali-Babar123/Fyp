@@ -2,11 +2,11 @@
 
 
 import React, { useContext } from 'react'
-import productContext from '../context/ProductContext'
+import ProductContext from '../context/ProductContext'
 
 const CartTotal = () => {
 
-    const {getCartAmout, delivery_fee, currency } = useContext(productContext);
+    const {getCartAmout, delivery_fee, currency } = useContext(ProductContext);
   return (
     <div className='w-full'>
         <div className='text-2xl'>

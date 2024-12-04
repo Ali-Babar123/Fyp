@@ -1,10 +1,10 @@
 import { useContext, useEffect, useState } from "react";
-import productContext from '../context/ProductContext';
+import ProductContext from '../context/ProductContext';
 import DropdownImage from '../assets/dropdown_icon.png'
 import ProductItem from "./ProductItem";
 const Collection = () => {
 
-    const { products, Search, showSearch } = useContext(productContext)
+    const { products, Search, showSearch } = useContext(ProductContext)
     const [showFilter, setShowFilter] = useState(false);
     const [filterProducts, setFilterProducts] = useState([]);
     const [category, setCategory] = useState([]);

@@ -3,10 +3,10 @@
 
 
 import React, { useContext, useState, useEffect } from 'react'
-import productContext from '../context/ProductContext';
+import ProductContext from '../context/ProductContext';
 import ProductItem from './ProductItem'
 const LatestCollection = () => {
-  const { products } = useContext(productContext);
+  const { products } = useContext(ProductContext);
   const [latestProducts, setLatestProducts] = useState([]);
 
   useEffect(() => {

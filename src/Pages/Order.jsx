@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import productContext from '../context/ProductContext';
+import ProductContext from '../context/ProductContext';
 
 const Order = () => {
-  const { currency, products } = useContext(productContext);
+  const { currency, products } = useContext(ProductContext);
 
   return (
     <div className="px-16 border-t py-16">

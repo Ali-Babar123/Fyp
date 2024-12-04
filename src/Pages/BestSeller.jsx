@@ -2,10 +2,10 @@
 
 
 import React, { useContext, useEffect, useState } from 'react'
-import productContext from '../context/ProductContext'
+import ProductContext from '../context/ProductContext'
 import ProductItem from './ProductItem'
 const BestSeller = () => {
-    const {products} = useContext(productContext)
+    const {products} = useContext(ProductContext)
     const [bestSeller, setBestSeller] = useState([])
 
     useEffect(()=>{

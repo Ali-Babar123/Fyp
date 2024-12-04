@@ -3,7 +3,7 @@
 
 import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import productContext from '../context/ProductContext';
+import ProductContext from '../context/ProductContext';
 import StarImage from '../assets/star_icon.png'
 // import StarImageDull from '../assets/star_dull_icon.png'
 import DisplayRelatedProducts from './DisplayRelatedProducts';
@@ -11,7 +11,7 @@ import DisplayRelatedProducts from './DisplayRelatedProducts';
 
 const SingleProduct = () => {
     const { id } = useParams();
-    const { products, currency, addToCart } = useContext(productContext);
+    const { products, currency, addToCart } = useContext(ProductContext);
     const [productData, setProductData] = useState(false);
     const [image, setImage] = useState('')
     const [size, setSize] = useState()

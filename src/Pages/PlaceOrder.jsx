@@ -7,7 +7,7 @@ import CartTotal from './CartTotal'
 import StripImage from '../assets/stripe_logo.png'
 import RazorPayImage from '../assets/razorpay_logo.png'
 import { useNavigate } from 'react-router-dom'
-import productContext from '../context/ProductContext'
+import ProductContext from '../context/ProductContext'
 const PlaceOrder = () => {
 
     const [method, setMethod] = useState('cod');

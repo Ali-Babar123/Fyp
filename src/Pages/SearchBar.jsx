@@ -1,14 +1,14 @@
 
 
 import React, { useContext, useEffect, useState } from 'react'
-import productContext from '../context/ProductContext'
+import ProductContext from '../context/ProductContext'
 import SearchImage from '../assets/search_icon.png'
 import CrossImage from '../assets/cross_icon.png'
 import { useLocation } from 'react-router-dom'
 
 const SearchBar = () => {
 
-    const {search, setSearch, showSearch, setShowSearch} = useContext(productContext);
+    const {search, setSearch, showSearch, setShowSearch} = useContext(ProductContext);
     const location = useLocation();
     const [visible, setVisible] = useState(false);
 

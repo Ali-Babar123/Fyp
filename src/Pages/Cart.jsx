@@ -4,12 +4,12 @@
 
 import React, { useEffect, useState } from 'react'
 import { useContext } from 'react'
-import productContext from '../context/ProductContext'
+import ProductContext from '../context/ProductContext'
 import DeleteIcon from '../assets/bin_icon.png'
 import CartTotal from './CartTotal'
 
 const Cart = () => {
-    const { products, currency, cartItems, updateQuantity, navigate } = useContext(productContext);
+    const { products, currency, cartItems, updateQuantity, navigate } = useContext(ProductContext);
     const [cartData, setCartData] = useState([]);
 
 
